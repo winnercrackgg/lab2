@@ -7,27 +7,21 @@
 <body>
     <h1>Login Ulima</h1>
     <h2>Ingreso de Usuario</h2>
+    <p>Esta pantalla es el punto de entrada al sistema y su función es validar la identidad de los usuarios. Se requiere que los usuarios ingresen su correo y contraseña. El formulario debe reconocer que los campos para el correo deben ser de tipo email y para la contraseña de tipo password. Adicionalmente, es obligatorio seleccionar el rol del usuario como profesor o alumno.</p>
 
     <form method="POST" action="#">
-        <p>Usuario:
-            <input type="text" name="usuario" id="campo1"> 
+        <p>Correo:
+            <input type="email" name="correo"> 
         </p>
-        <p>Clave:
-            <input type="password" name="clave" id="campo2">
+        <p>Contraseña:
+            <input type="password" name="contraseña">
         </p>
 
-        <select>
-            <option value="1" name="menues">Menu 1</option>
-            <option value="2" name="menues">Menu 2</option>
-            <option value="3" name="menues">Menu 3</option>
+        <select name="rol">
+            <option value="profesor">Profesor</option>
+            <option value="alumno">Alumno</option>
         </select>
-        <p>Correo:     <input type="email" />         </p>
-        <p>Telefono:     <input type="tel" />         </p>
-        <p>URL:     <input type="url" />         </p>
-        <p>Color:     <input type="color" />         </p>
-        <p>Fecha:     <input type="date" />         </p>
-        <p>Hora:     <input type="time" />         </p>
-        <p>Hora:     <input type="datetime-local" />         </p>
+
         <input type="submit" value="Enviar" />
     </form>
 </body>
